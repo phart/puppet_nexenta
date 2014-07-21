@@ -1,3 +1,5 @@
+# based on logadm.rb, which is copyright PuppetLabs, http://projects.reductivelabs.com/projects/puppet/wiki/Logadm_Patterns
+#
 require 'etc'
 require 'fileutils'
 require 'optparse'
