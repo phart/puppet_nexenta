@@ -1,0 +1,10 @@
+#
+# Default NTP client settings used by NexentaOS
+#
+# Puppet template VERY simple, mirroring the default
+#
+driftfile <%= @drift_file %>
+
+<% @server_list.each do |server| -%>
+server <%= server %>
+<% end -%>

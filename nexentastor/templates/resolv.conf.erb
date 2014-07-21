@@ -1,0 +1,8 @@
+<% if (@dnssearch == '') or (@dnssearch == nil) -%>
+domain <%= @dnsdomain %>
+<% else -%>
+search <%= @dnssearch %>
+<% end -%>
+<% @nameservers.each do |server| -%>
+nameserver <%= server %>
+<% end -%>
